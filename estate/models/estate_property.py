@@ -6,7 +6,7 @@ class EstateProperty(models.Model):
 
     name = fields.Char(required=True)
     postcode = fields.Char()
-    date_availability = fields.Date(default=fields.Date.today())
+    date_availability = fields.Date(default=fields.Date.today().add(3))
     expected_price = fields.Float()
     selling_price = fields.Float(required=True)
     bedrooms = fields.Integer(default=2)
