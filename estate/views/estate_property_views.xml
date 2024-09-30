@@ -9,7 +9,7 @@
 
        <record id="estate_property_view" model="ir.ui.view">
         <field name="name">estate_property_list</field>
-        <field name="model">estate_property</field>
+        <field name="model">estate.property</field>
         <field name="arch" type="xml">
             <list string="Channel">
                 <field name="Title"/>
