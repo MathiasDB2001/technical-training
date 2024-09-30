@@ -23,19 +23,19 @@
         </field>
     </record>
 
-<form string="Test">
-    <sheet>
-        <group>
+    <form string="Test">
+        <sheet>
             <group>
-                <field name="postcode"/>
-                <field name="date_availability"/>
+                <group>
+                    <field name="postcode"/>
+                    <field name="date_availability"/>
+                </group>
+                <group>
+                    <field name="expected_price"/>
+                    <field name="selling_price"/>
+                </group>
             </group>
-            <group>
-                <field name="expected_price"/>
-                <field name="selling_price"/>
-            </group>
-        </group>
-    </sheet>
-</form>
+        </sheet>
+    </form>
 
 </odoo>
