@@ -1,5 +1,7 @@
+<odoo>
 <menuitem id="advertisements" name="Test">
     <menuitem id="properties" name="First Level">
         <menuitem id="new" action="test_model_action"/>
     </menuitem>
 </menuitem>
+</odoo>
