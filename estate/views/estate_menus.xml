@@ -1,7 +1,7 @@
 <odoo>
-    <menuitem id="advertisements" name="Test">
-        <menuitem id="properties" name="First Level">
-            <menuitem id="new" action="test_model_action"/>
+    <menuitem id="estate_property_root" name="Test">
+        <menuitem id="estatef_property_first_level" name="First Level">
+            <menuitem id="estate_property_next_level" action="estate_property_action"/>
         </menuitem>
     </menuitem>
 </odoo>
