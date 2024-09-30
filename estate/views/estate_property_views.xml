@@ -30,9 +30,11 @@
         <field name="arch" type="xml">
             <form string="Test">
                 <sheet>
-                <div>
-                    <h1 name='name'/>
-                </div>
+                    <div class='oe_title'>
+                        <h1 class='mb32'>
+                            <field name="name"/>
+                        </h1>
+                    </div>
                     <group>
                         <group>
                             <field name="postcode"/>
