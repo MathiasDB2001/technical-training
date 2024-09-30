@@ -9,7 +9,7 @@ class EstateProperty(models.Model):
     date_availability = fields.Date()
     expected_price = fields.Float()
     selling_price = fields.Float(required=True)
-    bedrooms = fields.Integer()
+    bedrooms = fields.Integer(default=2)
     living_area = fields.Integer()
     facades = fields.Integer()
     garage = fields.Boolean()
