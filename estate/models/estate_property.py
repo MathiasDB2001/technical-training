@@ -13,6 +13,7 @@ class EstateProperty(models.Model):
                   ('offer_accepted', 'Offer Accepted'), ('sold', 'Sold'), ('cancelled', 'Cancelled')],
         default='new'
     )
+    description = fields.Text()
     last_seen = fields.Datetime('last seen', default=fields.Datetime.now())
     postcode = fields.Char()
     date_availability = fields.Date(default=fields.Date.today()+relativedelta.relativedelta(months=3))
