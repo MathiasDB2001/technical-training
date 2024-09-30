@@ -43,8 +43,8 @@
                     <notebook>
                         <page string='description'>
                             <field name='description'><field/>
-                        <page/>
-                    <notebook/>
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
         </field>
