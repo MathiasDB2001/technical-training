@@ -24,6 +24,6 @@ class EstateProperty(models.Model):
         string='state',
         selection=[('new', 'New'), ('offer_received', 'Offer Received'), 
                   ('offer_accepted', 'Offer Accepted'), ('sold', 'Sold'), ('cancelled', 'Cancelled')],
-        default='New'
+        default='new'
     )
 
