@@ -42,7 +42,7 @@
                     </group>
                     <notebook>
                         <page string='description'>
-                            <field name='description'></field>
+                            <field name='description'/>
                         </page>
                     </notebook>
                 </sheet>
