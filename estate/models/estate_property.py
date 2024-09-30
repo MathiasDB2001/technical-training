@@ -7,6 +7,13 @@ class EstateProperty(models.Model):
 
     name = fields.Char(required=True)
     active = fields.Boolean(default=True)
+    state = fields.Selection(
+        string='State',
+        selection=[('new', 'New'), ('offer_received', 'Offer Received'), 
+                  ('offer_accepted', 'Offer Accepted'), ('sold', 'Sold'), ('cancelled', 'Cancelled')],
+        default='new'
+    )
+    last_seen = fields.Datetime('last seen', default=fields.Datetime.now())
     postcode = fields.Char()
     date_availability = fields.Date(default=fields.Date.today()+relativedelta.relativedelta(months=3))
     expected_price = fields.Float()
@@ -21,10 +28,5 @@ class EstateProperty(models.Model):
         string='garden orientation',
         selection=[('north', 'North'), ('east', 'East'), ('south', 'South'), ('West', 'West')]
     )
-    state = fields.Selection(
-        string='State',
-        selection=[('new', 'New'), ('offer_received', 'Offer Received'), 
-                  ('offer_accepted', 'Offer Accepted'), ('sold', 'Sold'), ('cancelled', 'Cancelled')],
-        default='new'
-    )
+
 
