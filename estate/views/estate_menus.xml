@@ -1,6 +1,6 @@
 <odoo>
     <menuitem id="estate_property_root" name="Estate Property">
-        <menuitem id="estatef_property_first_level" name="First Level">
+        <menuitem id="estatef_property_first_level" name="Properties">
             <menuitem id="estate_property_next_level" action="estate_property_action"/>
         </menuitem>
     </menuitem>
