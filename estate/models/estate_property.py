@@ -5,7 +5,7 @@ class EstateProperty(models.Model):
     _name = "estate.property"
     _description = "description"
 
-    name = fields.Char(required=True)
+    name = fields.Char(string='Title',required=True)
     active = fields.Boolean(default=True)
     state = fields.Selection(
         string='State',
