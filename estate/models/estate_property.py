@@ -47,7 +47,7 @@ class EstateProperty(models.Model):
 
 
 
-    @api.depends("offers_ids.price")
+    @api.depends("offer_ids.price")
     def _compute_best_price(self):
         for property in self:
             if property.offer_ids:
