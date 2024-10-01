@@ -40,10 +40,5 @@ class PropertyOffer(models.Model):
             estate.validity = (estate.date_deadline - fields.Date.to_date(estate.create_date)).days
 
 
-    @api.constrains("selling_price", "expected_price")
-    def _check_selling_price(self):
-        for property in self:
-            if (not float_is_zero(property.selling_price, precision_rounding=0.1) and
-                float_compare(property.selling_price, 0.9 * property.expected_price, precision_rounding=0.01) < 0):
-                raise ValidationError(_('The selling price should not be lower than 90% of the expected price'))
+
 
