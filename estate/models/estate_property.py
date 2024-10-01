@@ -40,18 +40,18 @@ class EstateProperty(models.Model):
 
 
 
-@api.depends("garden_area", "living_area")
-def _compute_total_area(self):
-    for property in self:
-        property.total_area = property.garden_area + property.living_area
+    @api.depends("garden_area", "living_area")
+    def _compute_total_area(self):
+        for property in self:
+            property.total_area = property.garden_area + property.living_area
 
 
 
-@api.depends("offers_ids.price")
-def _compute_best_price(self):
-    for property in self:
-        if property.offer_ids:
-            property.best_price = max(property.offer_ids.mapped("price"))
-        else:
-            property.best_price = 0
+    @api.depends("offers_ids.price")
+    def _compute_best_price(self):
+        for property in self:
+            if property.offer_ids:
+                property.best_price = max(property.offer_ids.mapped("price"))
+            else:
+                property.best_price = 0
 
