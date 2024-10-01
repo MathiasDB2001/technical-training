@@ -39,7 +39,7 @@ class EstateProperty(models.Model):
 
 
     _sql_constraints=[
-        ("check_selling_price", "CHECK(selling_price >= 0)", "The selling price must be positive")
+        ("check_selling_price", "CHECK(selling_price >= 0)", "The selling price must be positive"),
         ("check_expected_price", "CHECK(expected_price >= 0)", "The expected price must be positive")
     ]   
 
