@@ -16,13 +16,13 @@ class PropertyOffer(models.Model):
 
 
     def action_accept_offer(self):
-        self.status = "accepted"
+        self.state = "accepted"
         for offer in self:
             offer.property_id.selling_price = offer.price
 
 
     def action_refuse_offer(self):
-        self.status = "refused"
+        self.state = "refused"
 
 
 
