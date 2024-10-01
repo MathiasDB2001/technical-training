@@ -55,9 +55,11 @@
         <field name="model">estate.property.offer</field>
         <field name="arch" type="xml">
             <form string="Test">
-                <group name="price"></group>
-                <group name="parner_id"></group>
-                <group name="state"></group>
+                <group>
+                    <field name="price"></field>
+                    <field name="partner_id"></field>
+                    <field name="state"></field>
+                </group>
             </form>
         </field>
     </record>
