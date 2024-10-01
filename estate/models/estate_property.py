@@ -38,6 +38,10 @@ class EstateProperty(models.Model):
     offer_ids = fields.One2many("estate.property.offer", "property_id")
 
 
+    _sql_constraints=[
+        ("check_selling_price", "CHECK(selling_price >= 0)", "The selling price must be positive")
+    ]   
+
 
 
     @api.depends("garden_area", "living_area")
