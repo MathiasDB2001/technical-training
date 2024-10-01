@@ -70,7 +70,7 @@
 
 
 
-<record id="estate_property_offer_form" model="ir.ui.view">
+    <record id="estate_property_offer_form" model="ir.ui.view">
         <field name="name">estate_property_offer_form</field>
         <field name="model">estate.property.offer</field>
         <field name="arch" type="xml">
