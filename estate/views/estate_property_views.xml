@@ -70,6 +70,13 @@
                                 <field name='garden_orientation'/>
                             </group>
                         </page>
+                        <page string='Other Info'>
+                            <group>
+                                <field name='Buyer'/>
+                                <field name='Salesperson'/>
+                            </group>
+                        </page>
+                    
                     </notebook>
                 </sheet>
             </form>
