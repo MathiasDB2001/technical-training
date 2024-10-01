@@ -54,4 +54,12 @@ class EstateProperty(models.Model):
                 property.best_price = max(property.offer_ids.mapped("price"))
             else:
                 property.best_price = 0
+    
 
+    @api.onchange("garden")
+    def _onchage_garden(self):
+        if self.garden:
+            self.garden_area = 10
+            self.garden_orientation = "north"
+        else:
+            self.garden_area = self.garden_orientation = False
