@@ -26,7 +26,6 @@
             <list string="Channel">
                 <field name="name"/>
                 <field name='postcode'/>
-                <field name='property_type_id'/>
                 <field name='bedrooms'/>
                 <field name='living_area'/>
                 <field name='expected_price'/>
@@ -96,6 +95,7 @@
                             <field name="postcode"/>
                             <field name="date_availability"/>
                             <field name="state"/>
+                            <field name="property_type_id"/>
                         </group>
                         <group>
                             <field name="expected_price"/>
