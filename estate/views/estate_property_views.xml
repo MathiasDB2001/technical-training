@@ -31,7 +31,6 @@
                 <field name='expected_price'/>
                 <field name='selling_price'/>
                 <field name='date_availability'/>
-                <field name='best_price'/>
             </list>
         </field>
     </record>
@@ -89,6 +88,7 @@
                         <group>
                             <field name="expected_price"/>
                             <field name="selling_price"/>
+                            <field name='best_price'/>
                         </group>
                     </group>
                     <notebook>
