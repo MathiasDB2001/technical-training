@@ -3,6 +3,7 @@
         <menuitem id="estatef_property_first_level" name="Properties">
             <menuitem id="estate_property_next_level" action="estate_property_action"/>
             <menuitem id="estate_property_type" action="estate_property_type_action"/>
+            <menuitem id="estate_property_tag" action="estate_property_tag_action"/>
         </menuitem>
     </menuitem>
 </odoo>
