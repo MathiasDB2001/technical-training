@@ -55,4 +55,3 @@ def _compute_best_price(self):
         else:
             property.best_price = 0
 
-
