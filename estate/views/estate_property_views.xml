@@ -48,6 +48,7 @@
                         </h1>
                          <field name="tag_ids" widget="many2many_tags"/>
                     </div>
+                    <seperator/>
                     <group>
                         <group>
                             <field name="postcode"/>
@@ -71,13 +72,15 @@
                                 <field name='garden_orientation'/>
                             </group>
                         </page>
+                        <page string='Offers'>
+                            <field name='offer_ids'/>
+                        </page>
                         <page string='Other Info'>
                             <group>
                                 <field name='buyer_id'/>
                                 <field name='salesperson_id'/>
                             </group>
                         </page>
-                    
                     </notebook>
                 </sheet>
             </form>
