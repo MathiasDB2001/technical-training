@@ -21,7 +21,7 @@ class PropertyOffer(models.Model):
             offer.property_id.selling_price = offer.price
 
 
-    def action_refuse(self):
+    def action_refuse_offer(self):
         self.status = "refused"
 
 
