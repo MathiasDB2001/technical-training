@@ -1,4 +1,4 @@
-from odoo import fields, models
+from odoo import fields, models,api
 from dateutil import relativedelta
 
 class EstateProperty(models.Model):
