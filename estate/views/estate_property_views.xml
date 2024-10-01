@@ -37,6 +37,7 @@
     </record>
 
 
+
     <record id="estate_property_offer_list" model="ir.ui.view">
         <field name="name">estate_property_offer_list</field>
         <field name="model">estate.property.offer</field>
