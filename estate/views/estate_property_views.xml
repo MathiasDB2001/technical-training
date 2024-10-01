@@ -72,8 +72,8 @@
                         </page>
                         <page string='Other Info'>
                             <group>
-                                <field name='Buyer'/>
-                                <field name='Salesperson'/>
+                                <field name='buyer_id'/>
+                                <field name='salesperson_id'/>
                             </group>
                         </page>
                     
@@ -82,7 +82,5 @@
             </form>
         </field>
     </record>
-
-
 
 </odoo>
