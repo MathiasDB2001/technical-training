@@ -49,6 +49,24 @@
     </record>
 
 
+
+<record id="estate_property_offer_form" model="ir.ui.view">
+        <field name="name">estate_property_offer_form</field>
+        <field name="model">estate.property.offer</field>
+        <field name="arch" type="xml">
+            <form string="Test">
+                <group name="price"></group>
+                <group name="parner_id"></group>
+                <group name="state"></group>
+            </form>
+        </field>
+    </record>
+
+
+
+
+
+
     <record id="estate_property_form" model="ir.ui.view">
         <field name="name">estate_property_form</field>
         <field name="model">estate.property</field>
