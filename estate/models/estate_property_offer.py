@@ -15,6 +15,16 @@ class PropertyOffer(models.Model):
     property_id = fields.Many2one('estate.property')
 
 
+    def action_accept_offer(self):
+        self.status = "accepted"
+        for offer in self:
+            offer.property_id.selling_price = offer.price
+
+
+    def action_refuse(self):
+        self.status = "refused"
+
+
 
     @api.depends("validity", "create_date")
     def _compute_date_deadline(self):
@@ -26,3 +36,4 @@ class PropertyOffer(models.Model):
     def _inverse_date_deadline(self):
         for estate in self:
             estate.validity = (estate.date_deadline - fields.Date.to_date(estate.create_date)).days
+

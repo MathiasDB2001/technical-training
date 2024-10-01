@@ -75,12 +75,3 @@ class EstateProperty(models.Model):
     def action_cancel_property(self):
         self.state = "canceled"
 
-    
-    def action_accept_offer(self):
-        self.status = "accepted"
-        for offer in self:
-            offer.property_id.selling_price = offer.price
-
-
-    def action_refuse(self):
-        self.status = "refused"
